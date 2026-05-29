@@ -4,7 +4,9 @@ import numpy as np
 
 def pil_to_numpy(image):
 
-    return np.array(image)
+    rgb_image = image.convert("RGB") if image.mode != "RGB" else image
+
+    return np.array(rgb_image)
 
 
 def bgr_to_rgb(image):

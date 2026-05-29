@@ -68,7 +68,7 @@ uploaded_file = st.file_uploader(
 if uploaded_file is not None:
 
     # LOAD IMAGE
-    image = Image.open(uploaded_file)
+    image = Image.open(uploaded_file).convert("RGB")
 
     image_np = pil_to_numpy(image)
 
