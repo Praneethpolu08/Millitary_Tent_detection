@@ -1,4 +1,4 @@
-# Tent Detection
+# Tent Detection - 
 
 This project is a Streamlit-based web application for detecting tents in satellite or aerial images using a YOLO object detection model. It is designed to help users upload an image, run inference, and inspect the detected tent locations along with simple confidence metrics.
 
